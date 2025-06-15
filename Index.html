@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- ── Registration Form ── -->
+    <div class="form-container">
+      <h2>Registration Form</h2>
+
+      <form id="regForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" />
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" id="submitBtn">Register</button>
+          <button type="button" id="clearBtn">Clear</button>
+        </div>
+
+        <div id="message" class="message"></div>
+      </form>
+    </div>
+
+    <!-- ── Dynamic Entries List ── -->
+    <div class="entries-section">
+      <h3>Submitted Entries</h3>
+      <ul id="entriesList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
